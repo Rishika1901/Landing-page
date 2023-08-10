@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+header{
+  
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)) , url('bg.jpg');
+  background-size: cover;
+}
+nav{
+ padding-top: 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+.logo{
+text-decoration: none;
+  font-size: 2em;
+  transition: 2s;
+}
+.logo:hover{
+  color: indianred;
+}
+.items a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+padding: 25px 20px;
+position: relative;
+transition: 0.4s;
+}
+.items a:hover{
+  color: indianred;
+}
+.items a:before{
+  content: '';
+  color: white;
+  position: absolute;
+  top:0 ;
+  left:0 ;
+  width: 0%;
+  height: 100%;
+ border-bottom: 2px solid indianred;
+ transition: 0.4s linear;
+}
+.items a:hover::before{
+  width: 90%;
+ 
+}
+.button {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+padding: 10px 20px;
+background-color: indianred;
+border-radius: 8px;
+transition: 0.3s;
+}
+.button:hover{
+  background: transparent;
+ color: indianred;
+  border:1px solid white;
+}
+
+.main{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.main span{
+  font-size: 2em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.main h1{
+  font-size: 1.5em;
+}
+/* .body{
+  color: rgb(6, 6, 6);
+  position: absolute;
+  text-align: center;
+}
+.body span{
+  font-size: 2em;
+}
+.body h1{
+  font-size: 3.5em;
+} */
